@@ -14,7 +14,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import com.linecorp.bot.spring.boot.annotation.LineMessageHandler;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"me.ramswaroop.jbot", "slackBot"})
 @LineMessageHandler
 @EnableConfigurationProperties
 @EntityScan(basePackages = { "org.side.entities" })
