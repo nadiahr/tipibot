@@ -24,6 +24,21 @@
 	</properties>
 
 	<dependencies>
+	
+	<dependency>
+			<groupId>javax.websocket</groupId>
+			<artifactId>javax.websocket-api</artifactId>
+			<version>1.1</version>
+			<scope>provided</scope>
+		</dependency>
+
+ 		<!-- https://mvnrepository.com/artifact/me.ramswaroop.jbot/jbot-example -->
+<dependency>
+    <groupId>me.ramswaroop.jbot</groupId>
+    <artifactId>jbot-example</artifactId>
+    <version>4.1.0</version>
+</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
