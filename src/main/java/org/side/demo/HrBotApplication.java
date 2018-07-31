@@ -22,20 +22,9 @@ import com.linecorp.bot.spring.boot.annotation.LineMessageHandler;
 @ComponentScan(basePackages = { "slackBot" })
 @EnableJpaRepositories(basePackages = { "org.side.dao" })
 
-public class HrBotApplication extends WebMvcConfigurerAdapter {
-
-	static Path downloadedContentDir;
+public class HrBotApplication {
 
 	public static void main(String[] args) throws IOException {
-		downloadedContentDir = Files.createTempDirectory("line-bot");
 		SpringApplication.run(HrBotApplication.class, args);
-	}
-
-	@Bean
-	public ResourceBundleMessageSource messageSource() {
-		ResourceBundleMessageSource source = new ResourceBundleMessageSource();
-		source.setBasename("messages");
-		source.setUseCodeAsDefaultMessage(true);
-		return source;
 	}
 }
