@@ -19,6 +19,7 @@ import com.linecorp.bot.spring.boot.annotation.LineMessageHandler;
 @EnableConfigurationProperties
 @EntityScan(basePackages = { "org.side.entities" })
 @ComponentScan(basePackages = { "org.side.controller", "org.side.service" })
+@ComponentScan(basePackages = { "slackBot" })
 @EnableJpaRepositories(basePackages = { "org.side.dao" })
 
 public class HrBotApplication extends WebMvcConfigurerAdapter {
