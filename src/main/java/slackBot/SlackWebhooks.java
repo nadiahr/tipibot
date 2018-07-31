@@ -24,7 +24,7 @@ public class SlackWebhooks {
      * on Slack. You can setup a new incoming webhook
      * <a href="https://my.slack.com/services/new/incoming-webhook/">here</a>.
      */
-    @Value("${https://hooks.slack.com/services/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}")
+    @Value("${slackIncomingWebhookUrl}")
     private String slackIncomingWebhookUrl;
 
     /**

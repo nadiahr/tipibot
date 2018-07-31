@@ -31,7 +31,7 @@ public class SlashCommand {
      * The token you get while creating a new Slash Command. You
      * should paste the token in application.properties file.
      */
-    @Value("${BKtFurSbZcq2ynT1omxuB6EL}")
+    @Value("${slackBotToken}")
     private String slackToken;
 
 
